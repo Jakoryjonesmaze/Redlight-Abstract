@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color:red ;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 30px red;
+    }
+}
+
+
+h2 {
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+h2:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 100%;
+}
+
+
+.grid-container img {
+    width: 95%;
+    height: 95%;
+    display: flexbox;
+    object-fit: cover;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(red, green, blue, alpha);
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+h1 {
+    color: red;
+    padding: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
