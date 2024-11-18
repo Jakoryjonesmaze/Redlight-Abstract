@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+.caveat-font {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .logo {
+    font-family: "Caveat", cursive;
+    transform: rotate(-5deg);
+    font-size: 4rem;
+  }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -65,17 +80,20 @@ h2:hover {
 
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
     gap: 10px;
     width: 100%;
 }
 
 
 .grid-container img {
-    width: 95%;
-    height: 95%;
+    border-radius: 12px;
+    transition: all ease-in-out 0.25s;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
     display: flexbox;
     object-fit: cover;
 }
